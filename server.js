@@ -11,7 +11,7 @@ const express = require('express');
 const path = require('path');
 
 const app = express();
-const PORT = 3000; // 本地可固定3000端口
+const PORT = process.env.PORT || 3000;
 
 // 解析 JSON (若有 POST 请求要接收JSON时可用)
 app.use(express.json());
@@ -115,5 +115,5 @@ app.post('/api/schedule', (req, res) => {
 
 // 启动服务器
 app.listen(PORT, () => {
-  console.log(`Server is running at http://localhost:${PORT}`);
+  console.log(`Server running on port ${PORT}`);
 });
