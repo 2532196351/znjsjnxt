@@ -1,0 +1,16 @@
+{
+    "name": "smart-classroom-energy-system",
+    "version": "1.0.0",
+    "description": "智能教室节能系统 - 无 OpenAI 版本",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.21.2"
+    }
+  }
+  
